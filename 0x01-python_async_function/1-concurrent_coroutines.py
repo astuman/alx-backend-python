@@ -1,15 +1,14 @@
 #!/usr/bin/env python3
-"""random delay"""
+""" Twaits for random delay """
 
 import asyncio
 import random
 from typing import List
 wait_random = __import__('0-basic_async_syntax').wait_random
-"""execute multiple coroutines at the same time with async"""
 
 
 async def wait_n(n: int, max_delay: int = 10) -> List[float]:
-
+    """ Waits for ran delay until max_delay, returns list of actual delays """
     spawn_list = []
     delay_list = []
     for i in range(n):
