@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
+'''
+Test file for printing the correct output of the wait_n coroutine
+'''
 import asyncio
 
-wait_random = __import__(0-basic_async_syntax.py).wait_random
-print(asyncio.run(wait_random()))
-print(asyncio.run(wait_random(5)))
+wait_n = __import__('1-concurrent_coroutines').wait_n
+print(asyncio.run(wait_n(1, 1)))
+print(asyncio.run(wait_n(10, 7)))
+print(asyncio.run(wait_n(10, 10)))
