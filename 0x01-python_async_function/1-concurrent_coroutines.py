@@ -19,4 +19,5 @@ async def wait_n(n: int, max_delay: int = 10) -> List[float]:
 
     for spawn in spawn_list:
         await spawn
+
     return delay_list
