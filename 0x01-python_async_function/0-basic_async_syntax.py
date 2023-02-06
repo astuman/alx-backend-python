@@ -1,12 +1,12 @@
 #!/usr/bin/env python3
+"""waits for random delay """
 
 import asyncio
 import random
 
 
 async def wait_random(max_delay: int = 10) -> float:
-    """ delay for between 0 and max_delay"""
-    
-    actual_dealy: float = random.uniform(0, max_delay)
-    await asyncio.sleep(actual_dealy)
-    return actual_dealy
+    """ Waits for random delay between 0 and max_delay, returns that """
+    actual_delay: float = random.uniform(0, max_delay)
+    await asyncio.sleep(actual_delay)
+    return actual_delay
